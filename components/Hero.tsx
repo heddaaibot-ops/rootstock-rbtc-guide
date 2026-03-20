@@ -1,3 +1,5 @@
+'use client';
+
 export default function Hero() {
   const scrollToGetRBTC = () => {
     const element = document.getElementById('get-rbtc');
