@@ -13,7 +13,7 @@ export default function AboutSection() {
 
         {/* Definition */}
         <div className="max-w-4xl mx-auto mb-16">
-          <p className="text-xl text-gray-700 leading-relaxed">
+          <p className="text-xl text-rsk-text-dark leading-relaxed">
             <strong>rBTC（Real Bitcoin）</strong>是 Rootstock（RSK）区块链的原生加密货币。
             它与比特币（BTC）<strong>1:1 锚定</strong>，意味着每个 rBTC 都由等量的 BTC 支持。
             rBTC 用于支付交易费、执行智能合约以及与 Rootstock 生态系统中的去中心化应用（dApps）交互。

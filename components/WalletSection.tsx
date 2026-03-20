@@ -57,7 +57,7 @@ export default function WalletSection() {
               </div>
 
               <div className="bg-yellow-50 p-6">
-                <p className="text-gray-800">
+                <p className="text-rsk-text-dark">
                   <strong>截图占位符：</strong>这里将添加 MetaMask 设置步骤的详细截图
                 </p>
               </div>
