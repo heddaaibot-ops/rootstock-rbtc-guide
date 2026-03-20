@@ -22,7 +22,7 @@ export default function AboutSection() {
 
         {/* Three Core Advantages */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="bg-rsk-cream p-8 border-2 border-rsk-orange">
+          <div className="bg-rsk-cream p-8">
             <h3 className="text-xl font-bold text-rsk-text-dark mb-3 uppercase">
               比特币算力保护
             </h3>
@@ -31,7 +31,7 @@ export default function AboutSection() {
             </p>
           </div>
 
-          <div className="bg-rsk-cream p-8 border-2 border-rsk-purple">
+          <div className="bg-rsk-cream p-8">
             <h3 className="text-xl font-bold text-rsk-text-dark mb-3 uppercase">
               PowPeg 1:1 锚定
             </h3>
@@ -40,7 +40,7 @@ export default function AboutSection() {
             </p>
           </div>
 
-          <div className="bg-rsk-cream p-8 border-2 border-rsk-pink">
+          <div className="bg-rsk-cream p-8">
             <h3 className="text-xl font-bold text-rsk-text-dark mb-3 uppercase">
               无需许可访问 DeFi
             </h3>

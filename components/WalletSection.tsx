@@ -27,7 +27,7 @@ export default function WalletSection() {
           <h3 className="text-2xl font-bold text-rsk-text-dark mb-6 uppercase">支持的钱包</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {wallets.map((wallet) => (
-              <a key={wallet.name} href={wallet.url} target="_blank" rel="noopener noreferrer" className="bg-rsk-cream p-4 text-center border-2 border-transparent hover:border-rsk-orange transition-colors">
+              <a key={wallet.name} href={wallet.url} target="_blank" rel="noopener noreferrer" className="bg-rsk-cream p-4 text-center hover:bg-white transition-colors">
                 <div className="font-bold">{wallet.name}</div>
                 {wallet.recommended && <span className="text-xs bg-rsk-orange text-rsk-cream px-2 py-1 uppercase">推荐</span>}
               </a>
@@ -35,14 +35,14 @@ export default function WalletSection() {
           </div>
         </div>
 
-        <div className="bg-rsk-cream p-8 border-4 border-rsk-green">
+        <div className="bg-rsk-cream p-8">
           <button onClick={() => setShowSetup(!showSetup)} className="w-full bg-rsk-orange text-rsk-cream font-bold py-4 px-6 text-xl mb-4 uppercase">
             {showSetup ? '隐藏' : '显示'} MetaMask 设置教程 ↓
           </button>
 
           {showSetup && (
             <div className="mt-6 space-y-6">
-              <div className="bg-white p-6 border-2 border-rsk-orange">
+              <div className="bg-white p-6">
                 <h4 className="font-bold text-lg mb-4">网络参数（点击复制）</h4>
                 <div className="space-y-3">
                   {Object.entries(networkConfig).map(([key, value]) => (
@@ -56,7 +56,7 @@ export default function WalletSection() {
                 </div>
               </div>
 
-              <div className="bg-yellow-50 p-6 border-2 border-yellow-400">
+              <div className="bg-yellow-50 p-6">
                 <p className="text-gray-800">
                   <strong>截图占位符：</strong>这里将添加 MetaMask 设置步骤的详细截图
                 </p>

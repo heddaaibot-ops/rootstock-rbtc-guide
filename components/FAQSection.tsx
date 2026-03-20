@@ -18,13 +18,13 @@ export default function FAQSection() {
 
         <div className="max-w-4xl mx-auto space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-white border-4 border-rsk-cyan">
+            <div key={index} className="bg-white">
               <button onClick={() => setOpenIndex(openIndex === index ? null : index)} className="w-full px-6 py-4 text-left font-bold text-lg text-rsk-text-dark hover:bg-rsk-cream flex justify-between items-center transition-colors">
                 <span>{faq.question}</span>
                 <span className="text-rsk-orange text-2xl">{openIndex === index ? '−' : '+'}</span>
               </button>
               {openIndex === index && (
-                <div className="px-6 py-4 border-t-4 border-rsk-cyan bg-rsk-cream">
+                <div className="px-6 py-4 bg-rsk-cream">
                   <p className="text-rsk-text-dark leading-relaxed">{faq.answer}</p>
                 </div>
               )}
