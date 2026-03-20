@@ -18,16 +18,16 @@ export default function WalletSection() {
     <section id="wallet" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="mb-12">
-          <h2 className="inline-block bg-rsk-green text-white text-4xl md:text-5xl font-bold px-8 py-4 uppercase">
+          <h2 className="inline-block bg-rsk-green text-rsk-cream text-4xl md:text-5xl font-bold px-8 py-4 uppercase">
             钱包设置
           </h2>
         </div>
 
         <div className="mb-12">
-          <h3 className="text-2xl font-bold text-rsk-text-dark mb-6">支持的钱包</h3>
+          <h3 className="text-2xl font-bold text-rsk-text-dark mb-6 uppercase">支持的钱包</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {wallets.map((wallet) => (
-              <a key={wallet.name} href={wallet.url} target="_blank" rel="noopener noreferrer" className="bg-rsk-cream p-4 text-center hover:bg-rsk-orange hover:text-white transition-colors">
+              <a key={wallet.name} href={wallet.url} target="_blank" rel="noopener noreferrer" className="bg-rsk-cream p-4 text-center border-2 border-transparent hover:border-rsk-orange transition-colors">
                 <div className="font-bold">{wallet.name}</div>
                 {wallet.recommended && <span className="text-xs">⭐ 推荐</span>}
               </a>
@@ -35,8 +35,8 @@ export default function WalletSection() {
           </div>
         </div>
 
-        <div className="bg-rsk-cream p-8">
-          <button onClick={() => setShowSetup(!showSetup)} className="w-full bg-rsk-orange text-white font-bold py-4 px-6 text-xl mb-4">
+        <div className="bg-rsk-cream p-8 border-4 border-rsk-green">
+          <button onClick={() => setShowSetup(!showSetup)} className="w-full bg-rsk-orange text-rsk-cream font-bold py-4 px-6 text-xl mb-4 uppercase">
             {showSetup ? '隐藏' : '显示'} MetaMask 设置教程 ↓
           </button>
 

@@ -4,7 +4,7 @@ export default function AboutSection() {
       <div className="container mx-auto px-4">
         {/* Section Title */}
         <div className="mb-12">
-          <h2 className="inline-block bg-rsk-purple text-white text-4xl md:text-5xl font-bold px-8 py-4 uppercase">
+          <h2 className="inline-block bg-rsk-purple text-rsk-cream text-4xl md:text-5xl font-bold px-8 py-4 uppercase">
             什么是 rBTC
           </h2>
         </div>
@@ -52,8 +52,8 @@ export default function AboutSection() {
         </div>
 
         {/* Use Cases */}
-        <div className="bg-gradient-to-r from-rsk-orange to-rsk-pink p-8 text-white">
-          <h3 className="text-2xl font-bold mb-4">使用场景</h3>
+        <div className="bg-rsk-orange p-8 text-rsk-cream">
+          <h3 className="text-2xl font-bold mb-4 uppercase">使用场景</h3>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <h4 className="font-semibold mb-2">💰 DeFi 应用</h4>

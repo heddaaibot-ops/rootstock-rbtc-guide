@@ -7,11 +7,11 @@ export default function Hero() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-rsk-cream to-white pt-16">
+    <section className="min-h-screen flex items-center justify-center bg-rsk-cream pt-16">
       <div className="container mx-auto px-4 py-20 text-center">
         {/* Logo Placeholder */}
         <div className="mb-8 flex justify-center">
-          <div className="w-32 h-32 bg-rsk-orange flex items-center justify-center text-white text-4xl font-bold">
+          <div className="w-32 h-32 bg-rsk-orange flex items-center justify-center text-rsk-cream text-4xl font-bold">
             RSK
           </div>
         </div>
@@ -27,7 +27,7 @@ export default function Hero() {
         </p>
 
         {/* Description */}
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-12">
+        <p className="text-lg text-rsk-text-dark max-w-2xl mx-auto mb-12">
           rBTC 是 Rootstock 生态系统的原生代币，由比特币网络保护，
           让你的 BTC 拥有智能合约能力
         </p>
@@ -35,7 +35,7 @@ export default function Hero() {
         {/* CTA Button */}
         <button
           onClick={scrollToGetRBTC}
-          className="bg-rsk-orange hover:bg-[#FFA726] text-white font-bold px-12 py-4 text-xl transition-all transform hover:scale-105"
+          className="bg-rsk-orange hover:bg-[#FFA726] text-rsk-cream font-bold px-12 py-4 text-xl transition-colors uppercase"
         >
           开始获取 rBTC →
         </button>
