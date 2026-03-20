@@ -23,31 +23,28 @@ export default function AboutSection() {
         {/* Three Core Advantages */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="bg-rsk-cream p-8 border-2 border-rsk-orange">
-            <div className="text-4xl mb-4">🔒</div>
-            <h3 className="text-xl font-bold text-rsk-text-dark mb-3">
+            <h3 className="text-xl font-bold text-rsk-text-dark mb-3 uppercase">
               比特币算力保护
             </h3>
-            <p className="text-gray-700">
+            <p className="text-rsk-text-dark">
               通过合并挖矿，由 80% 的比特币算力保护，确保网络安全
             </p>
           </div>
 
           <div className="bg-rsk-cream p-8 border-2 border-rsk-purple">
-            <div className="text-4xl mb-4">🌉</div>
-            <h3 className="text-xl font-bold text-rsk-text-dark mb-3">
+            <h3 className="text-xl font-bold text-rsk-text-dark mb-3 uppercase">
               PowPeg 1:1 锚定
             </h3>
-            <p className="text-gray-700">
+            <p className="text-rsk-text-dark">
               通过 PowPeg（最安全的比特币桥）与 BTC 保持 1:1 锚定
             </p>
           </div>
 
           <div className="bg-rsk-cream p-8 border-2 border-rsk-pink">
-            <div className="text-4xl mb-4">🚀</div>
-            <h3 className="text-xl font-bold text-rsk-text-dark mb-3">
+            <h3 className="text-xl font-bold text-rsk-text-dark mb-3 uppercase">
               无需许可访问 DeFi
             </h3>
-            <p className="text-gray-700">
+            <p className="text-rsk-text-dark">
               在 Rootstock 上访问 200+ DeFi 应用和协议
             </p>
           </div>
@@ -58,19 +55,19 @@ export default function AboutSection() {
           <h3 className="text-2xl font-bold mb-4 uppercase">使用场景</h3>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <h4 className="font-semibold mb-2">💰 DeFi 应用</h4>
+              <h4 className="font-bold mb-2 uppercase">DeFi 应用</h4>
               <p>在 Sovryn、Money on Chain、Tropykus 等平台上借贷、质押、交易</p>
             </div>
             <div>
-              <h4 className="font-semibold mb-2">⛽ 支付 Gas 费</h4>
+              <h4 className="font-bold mb-2 uppercase">支付 Gas 费</h4>
               <p>用于支付 Rootstock 网络上的所有交易费用</p>
             </div>
             <div>
-              <h4 className="font-semibold mb-2">📜 智能合约</h4>
+              <h4 className="font-bold mb-2 uppercase">智能合约</h4>
               <p>与 Rootstock 上的智能合约进行交互</p>
             </div>
             <div>
-              <h4 className="font-semibold mb-2">⚡ 快速交易</h4>
+              <h4 className="font-bold mb-2 uppercase">快速交易</h4>
               <p>30秒-1分钟内确认，比比特币主网更快</p>
             </div>
           </div>

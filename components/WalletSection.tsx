@@ -29,7 +29,7 @@ export default function WalletSection() {
             {wallets.map((wallet) => (
               <a key={wallet.name} href={wallet.url} target="_blank" rel="noopener noreferrer" className="bg-rsk-cream p-4 text-center border-2 border-transparent hover:border-rsk-orange transition-colors">
                 <div className="font-bold">{wallet.name}</div>
-                {wallet.recommended && <span className="text-xs">⭐ 推荐</span>}
+                {wallet.recommended && <span className="text-xs bg-rsk-orange text-rsk-cream px-2 py-1 uppercase">推荐</span>}
               </a>
             ))}
           </div>
@@ -49,7 +49,7 @@ export default function WalletSection() {
                     <div key={key} className="flex justify-between items-center bg-gray-50 p-3">
                       <span className="font-semibold">{key}:</span>
                       <button onClick={() => copyToClipboard(value, key)} className="text-rsk-orange hover:underline font-mono">
-                        {value} {copiedField === key && '✓'}
+                        {value} {copiedField === key && <span className="text-rsk-green font-bold ml-2">已复制</span>}
                       </button>
                     </div>
                   ))}
@@ -58,7 +58,7 @@ export default function WalletSection() {
 
               <div className="bg-yellow-50 p-6 border-2 border-yellow-400">
                 <p className="text-gray-800">
-                  📸 <strong>截图占位符：</strong>这里将添加 MetaMask 设置步骤的详细截图
+                  <strong>截图占位符：</strong>这里将添加 MetaMask 设置步骤的详细截图
                 </p>
               </div>
             </div>
