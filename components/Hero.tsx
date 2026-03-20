@@ -11,13 +11,6 @@ export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center bg-rsk-cream pt-16">
       <div className="container mx-auto px-4 py-20 text-center">
-        {/* Logo Placeholder */}
-        <div className="mb-8 flex justify-center">
-          <div className="w-32 h-32 bg-rsk-orange flex items-center justify-center text-rsk-cream text-4xl font-bold">
-            RSK
-          </div>
-        </div>
-
         {/* Title */}
         <h1 className="text-5xl md:text-6xl font-bold text-rsk-text-dark mb-6">
           轻松获取 <span className="text-rsk-orange">rBTC</span>
