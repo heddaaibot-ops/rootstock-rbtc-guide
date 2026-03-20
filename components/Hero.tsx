@@ -23,8 +23,8 @@ export default function Hero() {
 
         {/* Description */}
         <p className="text-lg text-rsk-text-dark max-w-2xl mx-auto mb-12">
-          rBTC 是 Rootstock 生态系统的原生代币，由比特币网络保护，
-          让你的 BTC 拥有智能合约能力
+          rBTC 与比特币 1:1 锚定，由比特币算力保护。
+          在 Rootstock 上使用 rBTC 参与 DeFi、执行智能合约，享受比特币级别的安全性
         </p>
 
         {/* CTA Button */}
