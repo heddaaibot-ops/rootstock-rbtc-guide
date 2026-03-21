@@ -17,7 +17,7 @@ export default function Hero() {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-2xl md:text-3xl text-rsk-purple mb-4">
+        <p className="text-xl md:text-2xl text-rsk-pink mb-4">
           比特币 DeFi 的钥匙
         </p>
 
