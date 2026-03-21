@@ -49,29 +49,6 @@ export default function AboutSection() {
             </p>
           </div>
         </div>
-
-        {/* Use Cases */}
-        <div className="bg-rsk-orange p-8 text-rsk-cream">
-          <h3 className="text-2xl font-bold mb-4 uppercase">使用场景</h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div>
-              <h4 className="font-bold mb-2 uppercase">DeFi 应用</h4>
-              <p>在 Sovryn、Money on Chain、Tropykus 等平台上借贷、质押、交易</p>
-            </div>
-            <div>
-              <h4 className="font-bold mb-2 uppercase">支付 Gas 费</h4>
-              <p>用于支付 Rootstock 网络上的所有交易费用</p>
-            </div>
-            <div>
-              <h4 className="font-bold mb-2 uppercase">智能合约</h4>
-              <p>与 Rootstock 上的智能合约进行交互</p>
-            </div>
-            <div>
-              <h4 className="font-bold mb-2 uppercase">快速交易</h4>
-              <p>30秒-1分钟内确认，比比特币主网更快</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
