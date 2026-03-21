@@ -4,7 +4,6 @@ import AboutSection from '@/components/AboutSection';
 import GetRBTCSection from '@/components/GetRBTCSection';
 import WalletSection from '@/components/WalletSection';
 import FAQSection from '@/components/FAQSection';
-import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
         <WalletSection />
         <FAQSection />
       </main>
-      <Footer />
     </div>
   );
 }

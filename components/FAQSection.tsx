@@ -31,13 +31,6 @@ export default function FAQSection() {
             </div>
           ))}
         </div>
-
-        <div className="mt-12 text-center">
-          <p className="text-base text-rsk-text-dark mb-4 font-semibold">还有其他问题？</p>
-          <a href="https://t.me/rootstockCNchat" target="_blank" rel="noopener noreferrer" className="inline-block bg-rsk-purple text-rsk-cream font-bold px-6 py-2 hover:bg-[#B088FF] transition-colors uppercase">
-            在 RootstockCN 提问 →
-          </a>
-        </div>
       </div>
     </section>
   );
