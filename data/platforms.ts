@@ -49,6 +49,7 @@ export const platforms: Platform[] = [
     url: 'https://www.sushi.com/rootstock/swap',
     category: 'crypto',
     type: 'DEX',
+    featured: true,
   },
   {
     name: 'SmolRefuel',
@@ -125,5 +126,5 @@ export const platforms: Platform[] = [
 ];
 
 export const getBTCPlatforms = () => platforms.filter(p => p.category === 'btc');
-export const getCryptoPlatforms = () => platforms.filter(p => p.category === 'crypto');
+export const getCryptoPlatforms = () => platforms.filter(p => p.category === 'crypto').sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
 export const getFiatPlatforms = () => platforms.filter(p => p.category === 'fiat');
