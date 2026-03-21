@@ -11,7 +11,7 @@ export default function FAQSection() {
     <section id="faq" className="py-20 bg-rsk-cream">
       <div className="container mx-auto px-4">
         <div className="mb-12">
-          <h2 className="inline-block bg-rsk-cyan text-rsk-text-dark text-3xl md:text-4xl font-bold px-8 py-4 uppercase">
+          <h2 className="inline-block bg-rsk-cyan text-rsk-text-dark text-2xl md:text-3xl font-bold px-6 py-3 uppercase">
             常见问题 FAQ
           </h2>
         </div>

@@ -6,7 +6,7 @@ export default function AboutSection() {
       <div className="container mx-auto px-4">
         {/* Section Title */}
         <div className="mb-12">
-          <h2 className="inline-block bg-rsk-purple text-rsk-cream text-3xl md:text-4xl font-bold px-8 py-4 uppercase">
+          <h2 className="inline-block bg-rsk-purple text-rsk-cream text-2xl md:text-3xl font-bold px-6 py-3 uppercase">
             什么是 rBTC
           </h2>
         </div>
