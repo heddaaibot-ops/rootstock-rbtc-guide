@@ -126,5 +126,15 @@ export const platforms: Platform[] = [
 ];
 
 export const getBTCPlatforms = () => platforms.filter(p => p.category === 'btc');
-export const getCryptoPlatforms = () => platforms.filter(p => p.category === 'crypto').sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
+export const getCryptoPlatforms = () => {
+  const order = ['Sushi Swap', 'Jumper', 'Orbiter'];
+  return platforms.filter(p => p.category === 'crypto').sort((a, b) => {
+    const aIndex = order.indexOf(a.name);
+    const bIndex = order.indexOf(b.name);
+    if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
+    if (aIndex !== -1) return -1;
+    if (bIndex !== -1) return 1;
+    return 0;
+  });
+};
 export const getFiatPlatforms = () => platforms.filter(p => p.category === 'fiat');
