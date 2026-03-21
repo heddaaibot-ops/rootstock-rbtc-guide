@@ -2,16 +2,15 @@
 'use client';
 
 import { useState } from 'react';
-import { getBTCPlatforms, getCryptoPlatforms, getFiatPlatforms } from '@/data/platforms';
+import { getBTCPlatforms, getCryptoPlatforms } from '@/data/platforms';
 
 export default function GetRBTCSection() {
-  const [activeTab, setActiveTab] = useState<'btc' | 'crypto' | 'fiat'>('btc');
+  const [activeTab, setActiveTab] = useState<'btc' | 'crypto'>('btc');
 
   const btcPlatforms = getBTCPlatforms();
   const cryptoPlatforms = getCryptoPlatforms();
-  const fiatPlatforms = getFiatPlatforms();
 
-  const currentPlatforms = activeTab === 'btc' ? btcPlatforms : activeTab === 'crypto' ? cryptoPlatforms : fiatPlatforms;
+  const currentPlatforms = activeTab === 'btc' ? btcPlatforms : cryptoPlatforms;
 
   return (
     <section id="get-rbtc" className="py-20 bg-rsk-cream">
@@ -28,9 +27,6 @@ export default function GetRBTCSection() {
           </button>
           <button onClick={() => setActiveTab('crypto')} className={`px-8 py-4 font-bold text-lg uppercase transition-colors ${activeTab === 'crypto' ? 'bg-rsk-purple text-rsk-cream' : 'bg-white text-rsk-text-dark'}`}>
             用数字资产获取
-          </button>
-          <button onClick={() => setActiveTab('fiat')} className={`px-8 py-4 font-bold text-lg uppercase transition-colors ${activeTab === 'fiat' ? 'bg-rsk-green text-rsk-cream' : 'bg-white text-rsk-text-dark'}`}>
-            用法币获取
           </button>
         </div>
 
