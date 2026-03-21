@@ -6,14 +6,14 @@ export default function AboutSection() {
       <div className="container mx-auto px-4">
         {/* Section Title */}
         <div className="mb-12">
-          <h2 className="inline-block bg-rsk-purple text-rsk-cream text-4xl md:text-5xl font-bold px-8 py-4 uppercase">
+          <h2 className="inline-block bg-rsk-purple text-rsk-cream text-3xl md:text-4xl font-bold px-8 py-4 uppercase">
             什么是 rBTC
           </h2>
         </div>
 
         {/* Definition */}
         <div className="max-w-4xl mx-auto mb-16">
-          <p className="text-xl text-rsk-text-dark leading-relaxed">
+          <p className="text-lg text-rsk-text-dark leading-relaxed">
             <strong>rBTC（Real Bitcoin）</strong>是 Rootstock（RSK）区块链的原生加密货币。
             它与比特币（BTC）<strong>1:1 锚定</strong>，意味着每个 rBTC 都由等量的 BTC 支持。
             rBTC 用于支付交易费、执行智能合约以及与 Rootstock 生态系统中的去中心化应用（dApps）交互。
@@ -23,7 +23,7 @@ export default function AboutSection() {
         {/* Three Core Advantages */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="bg-rsk-cream p-8">
-            <h3 className="text-xl font-bold text-rsk-text-dark mb-3 uppercase">
+            <h3 className="text-lg font-bold text-rsk-text-dark mb-3 uppercase">
               比特币算力保护
             </h3>
             <p className="text-rsk-text-dark">
@@ -32,7 +32,7 @@ export default function AboutSection() {
           </div>
 
           <div className="bg-rsk-cream p-8">
-            <h3 className="text-xl font-bold text-rsk-text-dark mb-3 uppercase">
+            <h3 className="text-lg font-bold text-rsk-text-dark mb-3 uppercase">
               PowPeg 1:1 锚定
             </h3>
             <p className="text-rsk-text-dark">
@@ -41,7 +41,7 @@ export default function AboutSection() {
           </div>
 
           <div className="bg-rsk-cream p-8">
-            <h3 className="text-xl font-bold text-rsk-text-dark mb-3 uppercase">
+            <h3 className="text-lg font-bold text-rsk-text-dark mb-3 uppercase">
               无需许可访问 DeFi
             </h3>
             <p className="text-rsk-text-dark">

@@ -12,17 +12,17 @@ export default function Hero() {
     <section className="min-h-screen flex items-center justify-center bg-rsk-cream pt-16">
       <div className="container mx-auto px-4 py-20 text-center">
         {/* Title */}
-        <h1 className="text-5xl md:text-6xl font-bold text-rsk-text-dark mb-6">
+        <h1 className="text-4xl md:text-5xl font-bold text-rsk-text-dark mb-6">
           轻松获取 <span className="text-rsk-orange">rBTC</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-xl md:text-2xl text-rsk-pink mb-4">
+        <p className="text-lg md:text-xl text-rsk-pink mb-4">
           比特币 DeFi 的钥匙
         </p>
 
         {/* Description */}
-        <p className="text-lg text-rsk-text-dark max-w-2xl mx-auto mb-12">
+        <p className="text-base text-rsk-text-dark max-w-2xl mx-auto mb-12">
           rBTC 与比特币 1:1 锚定，由比特币算力保护。
           在 Rootstock 上使用 rBTC 参与 DeFi、执行智能合约，享受比特币级别的安全性
         </p>
@@ -30,7 +30,7 @@ export default function Hero() {
         {/* CTA Button */}
         <button
           onClick={scrollToGetRBTC}
-          className="bg-rsk-orange hover:bg-[#FFA726] text-rsk-cream font-bold px-12 py-4 text-xl transition-colors uppercase"
+          className="bg-rsk-orange hover:bg-[#FFA726] text-rsk-cream font-bold px-10 py-3 text-lg transition-colors uppercase"
         >
           开始获取 rBTC →
         </button>

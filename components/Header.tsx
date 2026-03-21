@@ -14,10 +14,10 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="text-2xl font-bold text-rsk-orange">
+            <div className="text-xl font-bold text-rsk-orange">
               Rootstock
             </div>
-            <div className="hidden md:block text-lg font-semibold text-rsk-text-dark">
+            <div className="hidden md:block text-base font-semibold text-rsk-text-dark">
               rBTC 获取指南
             </div>
           </div>

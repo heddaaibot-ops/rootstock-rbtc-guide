@@ -16,16 +16,16 @@ export default function GetRBTCSection() {
     <section id="get-rbtc" className="py-20 bg-rsk-cream">
       <div className="container mx-auto px-4">
         <div className="mb-12">
-          <h2 className="inline-block bg-rsk-pink text-rsk-cream text-4xl md:text-5xl font-bold px-8 py-4 uppercase">
+          <h2 className="inline-block bg-rsk-pink text-rsk-cream text-3xl md:text-4xl font-bold px-8 py-4 uppercase">
             如何获取 rBTC
           </h2>
         </div>
 
         <div className="flex flex-wrap gap-4 mb-8">
-          <button onClick={() => setActiveTab('crypto')} className={`px-8 py-4 font-bold text-lg uppercase transition-colors ${activeTab === 'crypto' ? 'bg-rsk-purple text-rsk-cream' : 'bg-white text-rsk-text-dark'}`}>
+          <button onClick={() => setActiveTab('crypto')} className={`px-6 py-3 font-bold text-base uppercase transition-colors ${activeTab === 'crypto' ? 'bg-rsk-purple text-rsk-cream' : 'bg-white text-rsk-text-dark'}`}>
             跨链资产获取
           </button>
-          <button onClick={() => setActiveTab('btc')} className={`px-8 py-4 font-bold text-lg uppercase transition-colors ${activeTab === 'btc' ? 'bg-rsk-orange text-rsk-cream' : 'bg-white text-rsk-text-dark'}`}>
+          <button onClick={() => setActiveTab('btc')} className={`px-6 py-3 font-bold text-base uppercase transition-colors ${activeTab === 'btc' ? 'bg-rsk-orange text-rsk-cream' : 'bg-white text-rsk-text-dark'}`}>
             用 BTC 获取
           </button>
         </div>
@@ -34,8 +34,8 @@ export default function GetRBTCSection() {
           {currentPlatforms.map((platform) => (
             <div key={platform.name} className="bg-white p-6 hover:bg-rsk-cream transition-colors">
               <div className="flex items-center gap-2 mb-3">
-                <h3 className="text-2xl font-bold text-rsk-text-dark uppercase">{platform.name}</h3>
-                {platform.featured && <span className="text-2xl">⭐️</span>}
+                <h3 className="text-xl font-bold text-rsk-text-dark uppercase">{platform.name}</h3>
+                {platform.featured && <span className="text-xl">⭐️</span>}
               </div>
               <span className="inline-block bg-rsk-orange text-rsk-cream text-sm font-semibold px-3 py-1 mb-3 uppercase">{platform.type}</span>
               <p className="text-rsk-text-dark mb-4">{platform.description}</p>
