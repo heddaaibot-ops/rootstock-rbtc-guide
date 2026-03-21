@@ -24,12 +24,11 @@
 - Footer
 
 ### **2. 完整的数据内容**
-- **14 个获取平台**：
-  - 2 个 BTC 桥接平台
-  - 7 个数字资产交换平台
-  - 5 个法币入金平台
-- **11 个支持的钱包**
-- **7 个常见问题** FAQ
+- **9 个获取平台**（已移除法币选项）：
+  - 2 个 BTC 桥接平台（Boltz、PowPeg）
+  - 7 个跨链资产平台（Sushi Swap ⭐️、Jumper、Orbiter、OKU、Symbiosis、SmolRefuel、Gas.Zip）
+- **11 个支持的钱包**（MetaMask 推荐）
+- **7 个常见问题** FAQ（经官网验证）
 
 ### **3. Rootstock 3000 SBT 设计风格**
 - ✅ **直角边框**（无圆角）
@@ -45,12 +44,12 @@
 - ✅ **简洁专业**
 
 ### **4. 交互功能**
-- 平滑滚动导航
-- 三选项卡切换（BTC/数字资产/法币）
+- 平滑滚动导航（固定 Header）
+- 双选项卡切换（跨链资产 / BTC）
 - FAQ 手风琴展开/收起
 - MetaMask 设置步骤展开/收起
-- 网络参数一键复制
-- 响应式设计
+- 网络参数一键复制（点击显示"已复制"）
+- 完全响应式设计（移动端优化）
 
 ---
 
@@ -82,21 +81,31 @@ rootstock-rbtc-guide/
 
 ## 🎨 设计特点
 
+### **设计原则**（基于 Rootstock 3000 Days SBT）
+1. **无圆角设计**：所有元素使用直角边框
+2. **无彩色边框**：移除所有装饰性边框
+3. **纯色背景**：不使用渐变
+4. **统一字体**：Space_Grotesk（Google Fonts）
+5. **棕色文字**：#5C2E00（9.8:1 对比度）
+6. **精致字体**：整体缩小一级，更精致专业
+
 ### **颜色使用**
-- **Hero**: 米色背景
-- **About**: 白色背景 + 紫色标题
-- **Get rBTC**: 米色背景 + 粉色标题
-- **Wallet**: 白色背景 + 绿色标题
-- **FAQ**: 米色背景 + 青色标题
-- **Footer**: 深色背景
+- **Hero**: 米色背景 (#FDF8F0)
+- **About**: 白色背景 + 紫色标题 (#9E75FF)
+- **Get rBTC**: 米色背景 + 粉色标题 (#FF70E0)
+- **Wallet**: 白色背景 + 绿色标题 (#78C700)
+- **FAQ**: 米色背景 + 青色标题 (#08FFD1)
+- **Footer**: 深棕色背景 (#5C2E00)
+- **强调色**: 橙色 (#FF9100) - 按钮、链接
+- **文字色**: 深棕色 (#5C2E00)
 
 ### **视觉元素**
-- 直角边框（border-4）
-- 实色背景标题
+- 无边框设计（clean & minimal）
+- 实色背景标题（高对比度）
 - 米色文字在深色背景
-- 统一的 hover 效果
-- 无渐变、无阴影
-- 简洁的图标使用
+- 统一的 hover 效果（背景色变化）
+- 无渐变、无阴影、无圆角
+- 推荐标记使用 ⭐️ emoji
 
 ---
 
@@ -139,6 +148,72 @@ npx vercel --prod --yes --scope heddaaibot-3797s-projects
 
 3. **修复：为所有组件添加 'use client' 指令**
    - 修复 Vercel 构建错误
+
+4. **移除 emoji 和字体标准化**
+   - 移除所有 emoji（保留推荐星标 ⭐️）
+   - 字体改为 Space_Grotesk（与 Rootstock 3000 一致）
+   - 更新 metadata 和 viewport 配置
+
+5. **更新 FAQ 支持链接**
+   - 改为 RootstockCN Telegram 群组
+   - https://t.me/rootstockCNchat
+
+6. **移除 RSK logo 占位符**
+   - 移除 Hero 区块顶部的 RSK 方块
+
+7. **更新 Hero 描述**
+   - 准确描述 rBTC 为 1:1 锚定
+   - 强调比特币算力保护
+
+8. **移除所有彩色边框**
+   - 移除 Tab 按钮边框
+   - 移除平台卡片边框
+   - 移除优势卡片边框
+   - 移除 FAQ 卡片边框
+   - Hover 效果改为背景色变化
+
+9. **文字颜色统一为棕色**
+   - 从 #2D3748（灰蓝）改为 #5C2E00（深橙棕）
+   - 与 Rootstock 3000 完全一致
+   - 对比度 9.8:1，符合无障碍标准
+
+10. **删除使用场景区块**
+    - 移除 AboutSection 底部的橙色使用场景块
+    - 简化内容，只保留定义和核心优势
+
+11. **Hero 副标题改为粉色**
+    - "比特币 DeFi 的钥匙" 从紫色改为粉色
+    - 字体缩小：text-xl/2xl → text-lg/xl
+
+12. **删除法币获取选项**
+    - 移除 "用法币获取" Tab
+    - 只保留 BTC 和数字资产两个选项
+
+13. **跨链资产获取重命名和重排**
+    - "用数字资产获取" → "跨链资产获取"
+    - 设为默认主要选项（第一个 Tab）
+    - Sushi Swap 添加推荐星标 ⭐️
+    - 自定义排序：Sushi Swap → Jumper → Orbiter → 其他
+
+14. **整体字体缩小**
+    - Hero 主标题：5xl/6xl → 4xl/5xl
+    - Hero 副标题：xl/2xl → lg/xl
+    - Hero 描述：lg → base
+    - Hero 按钮：xl → lg
+    - 所有区块标题：3xl/4xl → 2xl/3xl
+    - AboutSection 定义：xl → lg
+    - AboutSection 卡片标题：xl → lg
+    - GetRBTCSection Tab 按钮：lg → base
+    - GetRBTCSection 平台标题：2xl → xl
+    - WalletSection 小标题：2xl → xl
+    - FAQ 问题：lg → base
+    - FAQ +/- 图标：2xl → xl
+    - Header logo：2xl → xl
+    - Footer 标题：lg → base
+
+15. **再次缩小区块标题**
+    - 所有区块大标题：3xl/4xl → 2xl/3xl
+    - padding 缩小：px-8 py-4 → px-6 py-3
 
 ---
 
@@ -192,5 +267,5 @@ npx vercel --prod --yes --scope heddaaibot-3797s-projects
 
 ---
 
-**项目完成时间**: 2025-03-21
-**状态**: ✅ 已部署上线
+**项目完成时间**: 2026-03-21
+**状态**: ✅ 已部署上线，持续优化中
